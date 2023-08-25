@@ -105,18 +105,19 @@
     .heading {
       margin: 20px auto;
       display: flex;
-      align-items: end;
-      gap: 1rem;
-      font-size: 1.5rem;
+      flex-direction: column;
+      font-size: 3rem;
       font-weight: 700;
       padding-left: 0;
+      margin: 10rem 0 5rem 0;
+    }
+    .heading h1 {
+      padding-right: 1rem;
     }
     .heading span {
-      display: inline;
-      font-size: 2.5rem;
+      display: block;
       color: var(--accent);
-      font-weight: 700;
-      margin-left: 0;
+      padding-left: 3rem;
     }
   }
 }
