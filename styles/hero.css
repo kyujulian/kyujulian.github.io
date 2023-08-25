@@ -1,0 +1,122 @@
+.hero {
+  background: url("../assets/hero-bg.png") no-repeat center center/cover;
+  color: var(--text-primary);
+
+  height: 90vh;
+  width: 100vw;
+  .container {
+    position: relative;
+  }
+
+  .sub-heading .btn {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    background: var(--accent-gradient);
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: none;
+
+    box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.35);
+    transition: all var(--transition-speed) ease;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero {
+    .heading {
+      font-size: 5rem;
+    }
+    .heading span {
+      padding-left: 20vw;
+    }
+    .sub-heading {
+      font-size: 2rem;
+      padding-left: 30vw;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .hero {
+    .heading {
+      font-size: 3rem;
+    }
+    .heading span {
+      padding-left: 20vw;
+    }
+    .sub-heading {
+      font-size: 1.5rem;
+      padding-left: 30vw;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-align: start;
+    padding: 0;
+    margin: 0;
+  }
+  .heading {
+    font-weight: 700;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  .heading span {
+    display: block;
+    color: var(--accent);
+  }
+  .sub-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    /* text-align: center; */
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero {
+    .container {
+      height: 90%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .sub-heading {
+      font-size: 1rem;
+      font-weight: bold;
+      padding-left: 0;
+    }
+    .heading {
+      margin: 20px auto;
+      display: flex;
+      align-items: end;
+      gap: 1rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding-left: 0;
+    }
+    .heading span {
+      display: inline;
+      font-size: 2.5rem;
+      color: var(--accent);
+      font-weight: 700;
+      margin-left: 0;
+    }
+  }
+}

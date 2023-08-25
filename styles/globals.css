@@ -1,0 +1,67 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+:root {
+  --transition-speed: 300ms;
+  --accent: #95edfa;
+  --accent-gradient: linear-gradient(204deg, #105294 0%, #95edfa 100%);
+  --border-accent: #2caeba30;
+  --text-primary: #fff;
+  --text-secondary: #000;
+  /* box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.35); */
+}
+
+/* Global styles */
+body {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 50px;
+  align-items: center;
+}
+
+.about img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Contact section styles */
+.contact {
+  background-color: #f4f4f4;
+  padding: 100px;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.nav-button {
+  width: 4rem;
+  height: 4rem;
+  background: none;
+  border: none;
+}
+
+.nav-button * {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-button:hover {
+  cursor: pointer;
+}

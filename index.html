@@ -1,104 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/liquidjs/dist/liquid.browser.umd.js"></script>
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/hero.css" />
+    <title>Responsive webPage</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.jsdelivr.net/npm/liquidjs/dist/liquid.browser.umd.js"></script>
-  <link rel="stylesheet" href="./styles.css" />
-  <title>Responsive webPage</title>
-</head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <span class="link-text logo">Julian</span>
+      <ul class="navbar-nav">
+        <!-- <li class="nav-item logo-link logo"> -->
+        <!--   <a href="#" id="toggleButton" class="nav-link"> -->
+        <!--     <svg -->
+        <!--       xmlns="http://www.w3.org/2000/svg" -->
+        <!--       viewBox="0 0 24 24" -->
+        <!--       fill="currentColor" -->
+        <!--       class="icon logo-icon" -->
+        <!--     > -->
+        <!--       <path -->
+        <!--         class="path" -->
+        <!--         fill-rule="evenodd" -->
+        <!--         d="M4.72 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 010-1.06zm6 0a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 010-1.06z" -->
+        <!--         clip-rule="evenodd" -->
+        <!--       /> -->
+        <!--     </svg> -->
+        <!--   </a> -->
+        <!-- </li> -->
+        <li class="nav-item" id="#homeIcon">
+          <a href="#" class="nav-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon"
+            >
+              <path
+                d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z"
+              />
+              <path
+                d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z"
+              />
+            </svg>
+            <span class="link-text"> Home </span>
+          </a>
+        </li>
 
-<body>
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <ul class="nav-links">
-      <li class="nav-item">
-        <a href="#home">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="#about">About</a>
-      </li>
-      <li class="nav-item">
-        <a href="#contact">Contact</a>
-      </li>
-    </ul>
-    <img class="nav-logo" src="logo.png" alt="Logo" />
-    <button type="button" id="openNavMenuButton" class="nav-button">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="">
-        <path fill-rule="evenodd"
-          d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-          clip-rule="evenodd" />
-      </svg>
-    </button>
-  </nav>
-  <nav class="mobile-menu">
-    <button type="button" id="closeNavMenuButton" class="nav-button">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="">
-        <path fill-rule="evenodd"
-          d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
-          clip-rule="evenodd" />
-      </svg>
-    </button>
-    <ul class="nav-links">
-      <li class="nav-item">
-        <a href="#home">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="#about">About</a>
-      </li>
-      <li class="nav-item">
-        <a href="#contact">Contact</a>
-      </li>
-    </ul>
-  </nav>
+        <li class="nav-item" id="#aboutIcon">
+          <a href="#" class="nav-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 576 512"
+              class="icon"
+            >
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 256h64c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm-32-96a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zm256-32H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16z"
+              />
+            </svg>
+            <span class="link-text"> About </span>
+          </a>
+        </li>
+        <li class="nav-item" id="#contactIcon">
+          <a href="#" class="nav-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 512 512"
+              class="icon"
+            >
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+              />
+            </svg>
+            <span class="link-text"> Contact </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h2>Your Catchy Subheading Here</h2>
-    <h1>Welcome to Our Website</h1>
-  </section>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="heading">
+          <h1>Awaken the</h1>
+          <span>curiosity within</span>
+        </div>
+        <div class="sub-heading">
+          <h2 class="text">One wonder at a time</h2>
+          <button class="btn">Explore</button>
+        </div>
+      </div>
+    </section>
 
-  <!-- About Section -->
-  <section class="about" id="about">
-    <!-- <img src="about-image.jpg" alt="About Me" /> -->
-    <div>
-      <p id="about-paragraph">
-        This is a brief paragraph about myself. You can click the button below
-        to expand and collapse this text.
-      </p>
-      <button id="toggle-about">Toggle</button>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section class="about" id="about">
+      <!-- <img src="about-image.jpg" alt="About Me" /> -->
+      <div>
+        <p id="about-paragraph">
+          This is a brief paragraph about myself. You can click the button below
+          to expand and collapse this text.
+        </p>
+        <button id="toggle-about">Toggle</button>
+      </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <div class="contact-form">
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" rows="4" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-      <div id="output" ></div>
-    </div>
-  </section>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-form">
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" rows="4" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+        <div id="output"></div>
+      </div>
+    </section>
 
-  <script src="liquid.js"/>
+    <script src="liquid.js" />
 
-  <script>
-    const openNavMenuButton = document.getElementById("openNavMenuButton");
-    const closeNavMenuButton = document.getElementById("closeNavMenuButton");
-    const mobileMenu = document.querySelector(".mobile-menu");
-
-    openNavMenuButton.addEventListener("click", () => {
-      mobileMenu.classList.add("mobile-menu-active");
-    });
-    closeNavMenuButton.addEventListener("click", () => {
-      mobileMenu.classList.remove("mobile-menu-active");
-    });
-  </script>
-</body>
-
+    <!-- <script> -->
+    <!--   const openNavMenuButton = document.getElementById("openNavMenuButton"); -->
+    <!--   const closeNavMenuButton = document.getElementById("closeNavMenuButton"); -->
+    <!--   const mobileMenu = document.querySelector(".mobile-menu"); -->
+    <!---->
+    <!--   openNavMenuButton.addEventListener("click", () => { -->
+    <!--     mobileMenu.classList.add("mobile-menu-active"); -->
+    <!--   }); -->
+    <!--   closeNavMenuButton.addEventListener("click", () => { -->
+    <!--     mobileMenu.classList.remove("mobile-menu-active"); -->
+    <!--   }); -->
+    <!-- </script> -->
+  </body>
 </html>
