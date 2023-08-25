@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/liquidjs/dist/liquid.browser.umd.js"></script>
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Responsive webPage</title>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li class="nav-item">
+        <a href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+    <img class="nav-logo" src="logo.png" alt="Logo" />
+    <button type="button" id="openNavMenuButton" class="nav-button">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="">
+        <path fill-rule="evenodd"
+          d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+          clip-rule="evenodd" />
+      </svg>
+    </button>
+  </nav>
+  <nav class="mobile-menu">
+    <button type="button" id="closeNavMenuButton" class="nav-button">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="">
+        <path fill-rule="evenodd"
+          d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+          clip-rule="evenodd" />
+      </svg>
+    </button>
+    <ul class="nav-links">
+      <li class="nav-item">
+        <a href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Your Catchy Subheading Here</h2>
+    <h1>Welcome to Our Website</h1>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <!-- <img src="about-image.jpg" alt="About Me" /> -->
+    <div>
+      <p id="about-paragraph">
+        This is a brief paragraph about myself. You can click the button below
+        to expand and collapse this text.
+      </p>
+      <button id="toggle-about">Toggle</button>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div id="output" ></div>
+    </div>
+  </section>
+
+  <script src="liquid.js"/>
+
+  <script>
+    const openNavMenuButton = document.getElementById("openNavMenuButton");
+    const closeNavMenuButton = document.getElementById("closeNavMenuButton");
+    const mobileMenu = document.querySelector(".mobile-menu");
+
+    openNavMenuButton.addEventListener("click", () => {
+      mobileMenu.classList.add("mobile-menu-active");
+    });
+    closeNavMenuButton.addEventListener("click", () => {
+      mobileMenu.classList.remove("mobile-menu-active");
+    });
+  </script>
+</body>
+
+</html>

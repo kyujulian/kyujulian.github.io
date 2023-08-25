@@ -1,0 +1,11 @@
+[
+    {
+        "name" : "Agio Store : E-commerce website",
+        "description" : "A full stack e-commerce website built with Next.Js , Shopify and Tailwind CSS"
+    },
+    {
+        "name" : "Labeling Bot :  A Discord bot for labeling tweets",
+        "description" : "A Discord bot that labels tweets with the help of Google Cloud Natural Language API"
+    }
+
+]
