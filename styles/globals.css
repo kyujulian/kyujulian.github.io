@@ -18,9 +18,11 @@ li {
   --border-accent: #2caeba30;
   --text-primary: #fff;
   --text-secondary: #a8b2d1;
-  --bg-primary: #02060f;
-  --bg-black: #02060f;
-  --bg-projects: #0f172a;
+  --bg-black: #000000;
+  --bg-dark: #02060f;
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+
   --border-radius: 15px;
   /* box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.35); */
 }

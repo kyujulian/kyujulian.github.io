@@ -2,7 +2,7 @@
   font-family: "Montserrat", sans-serif;
 }
 .about {
-  background: var(--bg-primary);
+  background: var(--bg-dark);
   .heading {
     color: var(--accent);
     font-weight: 700;
@@ -131,7 +131,7 @@
       padding-bottom: 5rem;
     }
 
-    background: var(--bg-primary);
+    background: var(--bg-dark);
     .image {
       background-size: cover;
       background-position: center;

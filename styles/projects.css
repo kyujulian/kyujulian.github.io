@@ -2,7 +2,7 @@
   font-family: "Montserrat", sans-serif;
 }
 .projects {
-  background: var(--bg-projects);
+  background: var(--bg-primary);
   border-top: 1px solid var(--border-accent);
 
   .projects-container {
@@ -55,7 +55,7 @@
   .image-container a {
     background: white;
     border: solid 2px transparent;
-    border-radius: 15px;
+    border-radius: var(--border-radius);
     color: black;
     padding: 1rem 2rem;
     position: absolute;

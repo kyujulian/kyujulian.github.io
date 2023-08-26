@@ -7,7 +7,7 @@
 .footer {
   width: 100vw;
   height: fit-content;
-  background: var(--bg-projects);
+  background: var(--bg-primary);
   border-top: 1px solid var(--border-accent);
 
   padding: 5rem 10vw 1rem 10vw;
