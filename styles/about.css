@@ -1,3 +1,6 @@
+.about *{
+  font-family: 'Montserrat', sans-serif;
+}
 .about {
   background: var(--bg-primary);
   .heading {
@@ -34,28 +37,32 @@
     font-size: 1.4rem;
     line-height: 2rem;
     margin-bottom: 2rem;
+
     transition: all var(--transition-speed) ease;
   }
+
   .paragraph p {
     margin-top: 1rem;
-  }
-  .hidden p {
-    transition-delay: var(--transition-speed);
-    transition: all var(--transition-speed) ease;
-  }
-
-  .hidden {
-    transition: all var(--transition-speed) ease;
-  }
-
-  .hidden p {
-    /* transform: translateX(-100%); */
+    /* Those change in toggleAbout.js */
     opacity: 0;
+    /* transform: translateY(-100%); */
+    padding-bottom: 2rem;
+    z-index: -1;
+    transition: all var(--transition-speed) ease;
   }
-  .active p {
-    opacity: 1;
-    display: block;
-  }
+
+  /* .hidden { */
+  /*   transition: all var(--transition-speed) ease; */
+  /* } */
+
+  /* .hidden p { */
+  /*   z-index: -1; */
+  /*   opacity: 0; */
+  /* } */
+  /* .active p { */
+  /*   opacity: 1; */
+  /*   display: block; */
+  /* } */
 
   .toggle-about {
     border: none;
@@ -117,6 +124,9 @@
     .subheading {
       font-size: 1.5rem;
       margin: 2rem 0;
+    }
+    .paragraph p {
+      padding-bottom: 5rem;
     }
 
     background: var(--bg-primary);

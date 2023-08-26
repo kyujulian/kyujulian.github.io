@@ -1,4 +1,18 @@
 /* Navigation bar styles */
+.navbar *{
+  font-family: Montserrat, sans-serif;
+}
+.navbar {
+  .logo {
+    background: url("../assets/logoIcon.png") no-repeat center center/cover;
+    margin-left: 3rem;
+    width: 2rem;
+    height: 2.5rem;
+  }
+  .logo:hover {
+    cursor: pointer;
+  }
+}
 .navbar {
   --bg-nav: linear-gradient(
     270deg,
@@ -6,6 +20,7 @@
     rgba(12, 70, 120, 0) 100%
   );
   --glass-blur: blur(6px);
+  z-index: 50;
 }
 .navbar-nav {
   overflow: hidden;
@@ -31,7 +46,6 @@
 }
 
 .navbar-nav {
-  background: var(--bg-nav);
   height: 100%;
   display: flex;
   align-items: center;
@@ -54,6 +68,9 @@
   transition: var(--transition-speed) ease;
 
   overflow: hidden;
+}
+.nav-link:hover {
+  background: rgba(12, 70, 120, 0.26);
 }
 
 .link-text {
@@ -108,6 +125,7 @@
     display: none;
   }
   .navbar-nav {
+
     width: 100%;
     flex-direction: row;
   }
@@ -132,12 +150,15 @@
     width: 100vw;
     height: 5vh;
     top: 0;
+    padding: 0 5rem;
+
     border-bottom: 1px solid var(--border-accent);
     filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07))
       drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
   }
 
   .navbar-nav {
+
     width: 30%;
     flex-direction: row;
   }

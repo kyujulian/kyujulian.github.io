@@ -1,9 +1,18 @@
 const toggleAboutButton = document.getElementById("toggle-about");
-console.log(toggleAboutButton);
-const aboutParagraph = document.querySelector(".paragraph");
+
+const paragraphContainer = document.getElementById("about-paragraph");
+const content = document.getElementById("written-content");
+
+var expanded = false;
 
 toggleAboutButton.addEventListener("click", () => {
-  aboutParagraph.classList.toggle("active");
-  aboutParagraph.classList.toggle("hidden");
+  if (!expanded) {
+    var contentHeight = content.clientHeight;
+    paragraphContainer.style.height = contentHeight + "px";
+    content.style.opacity = "1";
+  } else {
+    paragraphContainer.style.height = "16px"; //obtained beforehand
+    content.style.opacity = "0";
+  }
+  expanded = !expanded;
 });
-// )}

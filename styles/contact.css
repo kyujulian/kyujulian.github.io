@@ -1,0 +1,163 @@
+.contact * {
+  font-family: "Montserrat", sans-serif;
+}
+.contact {
+  --contact-background: #1e293b;
+  --form-item-background: var(--contact-background);
+  background: var(--contact-background);
+  border-top: 1px solid var(--border-accent);
+
+  .heading {
+    color: var(--accent);
+    text-align: start;
+  }
+  .subheading {
+    color: var(--text-primary);
+  }
+  .contact-form form {
+    display: flex;
+
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  .form-item {
+    text-align: start;
+    width: 100%;
+    padding: 1rem 0.5rem;
+    margin: 0.5rem 0;
+    /* border-radius: 10px; */
+    /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); /* Add inset shadow */
+    background: var(--form-item-background);
+    border: none;
+  }
+  .form-input {
+    border-bottom: 1px solid hsl(0, 0%, 40%);
+    background: var(--contact-background);
+    color: var(--text-primary);
+  }
+  .identifiers {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .btn {
+    width: 100%;
+    color: white;
+    border: none;
+    font-weight: 700;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    border-radius: 10px;
+    background: var(--accent-gradient);
+    box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.35);
+  }
+
+  @media only screen and (min-width: 768px) {
+    padding: 2rem 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 4rem;
+
+    .heading {
+      font-size: 2rem;
+    }
+
+    .contact-form {
+      width: 45vw;
+    }
+    .image-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mail-image {
+      width: 20vw;
+      height: 20vw;
+      padding: 0 auto;
+      background: url("../assets/mailImage.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      /* animation */
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+      animation-name: mail;
+    }
+
+    .contact-form {
+      width: 45vw;
+    }
+    .heading {
+      margin: 2rem 0;
+    }
+
+    .mobile {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+    padding-bottom: 5rem;
+    justify-content: space-around;
+
+    .contact-form {
+      width: 100%;
+    }
+    .desktop {
+      display: none;
+    }
+    .contact-form-greeting {
+      padding: 2rem 2rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .mail-image {
+      width: 20vw;
+      height: 20vw;
+      padding: 0 auto;
+      background: url("../assets/mailImage.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      /* animation */
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+      animation-name: mail;
+    }
+
+    .mobile {
+      width: 20vw;
+      height: 20vw;
+      padding-top: 1rem;
+      display: block;
+    }
+    .form-item {
+      margin: 2rem 0;
+    }
+  }
+}
+
+@keyframes mail {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-1rem);
+  }
+}

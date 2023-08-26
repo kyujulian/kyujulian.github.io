@@ -1,11 +1,21 @@
 [
-    {
-        "name" : "Agio Store : E-commerce website",
-        "description" : "A full stack e-commerce website built with Next.Js , Shopify and Tailwind CSS"
-    },
-    {
-        "name" : "Labeling Bot :  A Discord bot for labeling tweets",
-        "description" : "A Discord bot that labels tweets with the help of Google Cloud Natural Language API"
-    }
-
+  {
+    "name": "dec : Flashcards + AI (in progress)",
+    "description": " A flashcards app with AI to help you study more efficiently",
+    "source": "https://github.com/kyujulian/dec",
+    "image": "./projects/dec.png"
+  },
+  {
+    "name": "Agio Store : E-commerce website",
+    "description": "A full stack e-commerce website built with Next.Js , Shopify and Tailwind CSS",
+    "source": "https://github.com/kyujulian/agio-store",
+    "live": "https://agio-store.vercel.app/",
+    "image": "./projects/agio-store.png"
+  },
+  {
+    "name": "Labeling Bot",
+    "description": "A discord bot to auxiliate in the process of data labeling (directed to text classification and sentiment analysis)",
+    "source": "https://github.com/kyujulian/LabelingBot",
+    "image": "./projects/agio-store.png"
+  }
 ]
