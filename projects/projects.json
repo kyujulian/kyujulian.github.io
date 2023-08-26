@@ -9,7 +9,7 @@
   {
     "name": "Agio Store : E-commerce website",
     "handle": "agio-store",
-    "description": "A full stack e-commerce website built with Next.Js , Shopify and Tailwind CSS",
+    "description": "A fully featured E-commerce store developed as a side project.\n\nIt uses Shopify Graphql API to fetch data from a \"Production ready\" shopify store, and provide a total custom experience to the user.\n\nUsing nextjs App router, it takes advantage of server-side rendering, providing very SEO-friendly pages without sacrificing client-side interactivity.\n\nA great learning experience with fullstack development in general!",
     "source": "https://github.com/kyujulian/agio-store",
     "live": "https://agio-store.vercel.app/",
     "image": "./projects/agio-store.png"
@@ -17,7 +17,7 @@
   {
     "name": "Labeling Bot",
     "handle": "labeling-bot",
-    "description": "A discord bot to auxiliate in the process of data labeling (directed to text classification and sentiment analysis)",
+    "description": "A bot to assist in  the process of data labeling for text analysis and classification using machine learning. \n\n The problem: \n\nWorking with large amounts of twitter data in order to conduct analysis for the Humanities department at Uni, the group I was working with was relying purely on google sheets.\n\nAnd, since those were related to political and controversial topics, the process of classification involved voting and group decisions, which is very sub-optimal only via the  sheets environment\n\nThe solution:\n\nA discord bot, that prompted all the active users for their input and decision about a given tweet, calculated the group decision and automatically updates the google sheets file in  real time.It was a great experience to work with the discord API, and also think in 'quality of life' features and elements for the users",
     "source": "https://github.com/kyujulian/LabelingBot",
     "image": "./projects/LabelingBot.png"
   }
