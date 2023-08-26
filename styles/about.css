@@ -1,5 +1,5 @@
-.about *{
-  font-family: 'Montserrat', sans-serif;
+.about * {
+  font-family: "Montserrat", sans-serif;
 }
 .about {
   background: var(--bg-primary);
@@ -13,7 +13,7 @@
   }
 
   .image {
-    background: url("https://images.unsplash.com/photo-1522556189639-b150ed9c4330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80");
+    background: url("../assets/profile.png");
     background-size: cover;
     background-position: center;
     /* border-radius: 449px; */
@@ -94,6 +94,10 @@
     }
     .paragraph {
       margin-left: 5rem;
+    }
+    .content {
+      margin: 0 auto;
+      max-width: 60vw;
     }
     .subheading {
       margin: max(2vw, 2rem) 0;
