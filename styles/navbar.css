@@ -1,13 +1,12 @@
 /* Navigation bar styles */
-.navbar *{
+.navbar * {
   font-family: Montserrat, sans-serif;
 }
 .navbar {
   .logo {
     background: url("../assets/logoIcon.png") no-repeat center center/cover;
-    margin-left: 3rem;
-    width: 2rem;
-    height: 2.5rem;
+    width: 1.5rem;
+    height: 1.75rem;
   }
   .logo:hover {
     cursor: pointer;
@@ -74,8 +73,6 @@
 }
 
 .link-text {
-  /* display: none; */
-  margin-left: 1rem;
   color: var(--text-primary);
 }
 
@@ -115,7 +112,7 @@
 }
 /* Nav hover */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .navbar {
     width: 100vw;
     height: 3rem;
@@ -125,7 +122,6 @@
     display: none;
   }
   .navbar-nav {
-
     width: 100%;
     flex-direction: row;
   }
@@ -145,7 +141,7 @@
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
   .navbar {
     width: 100vw;
     height: 5vh;
@@ -158,8 +154,7 @@
   }
 
   .navbar-nav {
-
-    width: 30%;
+    width: 40vw;
     flex-direction: row;
   }
   .nav-link .link-text {

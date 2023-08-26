@@ -17,8 +17,11 @@ li {
   --accent-gradient: linear-gradient(204deg, #105294 0%, #95edfa 100%);
   --border-accent: #2caeba30;
   --text-primary: #fff;
-  --text-secondary: #000;
+  --text-secondary: #a8b2d1;
   --bg-primary: #02060f;
+  --bg-black: #02060f;
+  --bg-projects: #0f172a;
+  --border-radius: 15px;
   /* box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.35); */
 }
 :root * {

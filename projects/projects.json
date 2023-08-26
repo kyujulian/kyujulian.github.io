@@ -1,12 +1,14 @@
 [
   {
     "name": "dec : Flashcards + AI (in progress)",
-    "description": " A flashcards app with AI to help you study more efficiently",
+    "handle": "dec",
+    "description": "A fullstack application that incorporates AI and to make the experience of studying through flashcards more enjoyable and seamless. \n The stack is: \n- NEXT.js - Server-side rendering, routing and client-side integrations\n - Vercel AI SDK - Communicate with OpenAI's APIs\n - Drizzle ORM - A utility to help create and manipulate SQL queries, in particular, SQLite\n - Turso - And Edge SQLite Database provider\n - TRPC - To ensure type safety between the database calls and client use.",
     "source": "https://github.com/kyujulian/dec",
     "image": "./projects/dec.png"
   },
   {
     "name": "Agio Store : E-commerce website",
+    "handle": "agio-store",
     "description": "A full stack e-commerce website built with Next.Js , Shopify and Tailwind CSS",
     "source": "https://github.com/kyujulian/agio-store",
     "live": "https://agio-store.vercel.app/",
@@ -14,8 +16,9 @@
   },
   {
     "name": "Labeling Bot",
+    "handle": "labeling-bot",
     "description": "A discord bot to auxiliate in the process of data labeling (directed to text classification and sentiment analysis)",
     "source": "https://github.com/kyujulian/LabelingBot",
-    "image": "./projects/agio-store.png"
+    "image": "./projects/LabelingBot.png"
   }
 ]

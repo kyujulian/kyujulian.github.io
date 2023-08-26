@@ -1,27 +1,7 @@
-var Liquid = window.liquidjs.Liquid;
-var engine = new Liquid({
-  extname: ".html",
-  cache: true,
-});
-
-let screenWidth = window.innerWidth;
-
-let descriptionRows = screenWidth > 1200 ? 4 : 2;
-
-if (screenWidth < 768) {
-  descriptionRows = 4;
-}
-
-let descriptionRowsLiquid = "{{ descriptionRows }}";
-
-console.log(descriptionRows);
-
-fetch("projects/projects.json")
-  .then((response) => response.json())
-  .then((data) => {
-    const template = `
+{% comment %} <div id="template-container">HELLO FROM TEMPLATE BRO</div> {% endcomment %}
+ 
+{% render "../partials/nav.liquid" %}
       <div class="projects-container">
-      {% for item in items %}
       <div class="project-card">
         <div class="image-container" 
         style="background: url({{item.image}}) no-repeat center center/cover;">
@@ -31,16 +11,16 @@ fetch("projects/projects.json")
         </div>
 
         <div class="written">
+
         <div>
           <h1 class="projects-title">{{ item.name }}</h1>
 
-          {% assign description = item.description | replace: "\n", "<br/>" %}
+          {% assign description = item.description | split: '\n' %}
           {% assign nOfRows = descriptionRows %}
 
 
           {% for line in description %}
-              <p>{{description | truncate: 250}}</p>
-              <a class="continue-reading-link" href="/projects.html#{{item.handle}}"> <p class="dots" > ... </p> Continue reading </a>
+              <p>{{ line }}</p>
           {% endfor %}  
 
           </div>
@@ -53,20 +33,6 @@ fetch("projects/projects.json")
           </a>
         </div>
       </div>
-      {% endfor %}
       </div>
-      `;
-    const renderedTemplate = engine.parseAndRender(template, {
-      items: data,
-      descriptionRows: descriptionRows,
-    });
 
-    return renderedTemplate;
-  })
-  .then((rendered) => {
-    const outputSection = document.getElementById("projects");
-    outputSection.innerHTML = rendered;
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+{% render "../partials/footer.liquid" %}

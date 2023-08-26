@@ -1,13 +1,13 @@
 {
-  "name": "liquidjs-demo-browser",
+  "name": "Templating with LiquidJS",
   "version": "1.0.0",
   "private": true,
-  "description": "Liquidjs Demo for Browser Usage",
+  "description": "Simple web page to demonstrate LiquidJS in browser",
   "main": "index.html",
   "scripts": {
     "start": "http-server -c-1 "
   },
-  "author": "harttle <yangjvn@126.com>",
+  "author": "Julian <liannsd3@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "http-server": "^0.11.1",
