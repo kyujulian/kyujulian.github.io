@@ -10,7 +10,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* padding: 5rem; */
   }
 
   .projects-title {
@@ -20,7 +19,7 @@
     margin-bottom: 2rem;
   }
   .written p {
-    line-height: 4rem;
+    line-height: max(1.3rem, min(3vw, 4rem));
     font-size: max(1rem, 1.5vw);
     padding: max(1rem, 1vw) 0;
   }
@@ -28,7 +27,6 @@
   .project-card {
     border-bottom: 1px solid var(--border-accent);
     width: 100%;
-    padding: 2rem 5rem 5rem 5rem;
   }
 
   .project-card:last-child {
@@ -45,7 +43,7 @@
     padding: 1rem 0;
     color: var(--accent);
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
     display: inline;
   }
@@ -110,6 +108,7 @@
       display: flex;
       gap: 5rem;
       margin: 2rem 0;
+      padding: 2rem 5rem 5rem 5rem;
     }
     .project-card:nth-child(2n) {
       flex-direction: row-reverse;
@@ -135,7 +134,7 @@
       width: 100%;
       text-decoration: none;
       margin: 1rem 0;
-      padding: 1rem 1rem;
+      padding: 0.5rem 1rem;
       transition: all var(--transition-speed) ease;
     }
     .source-link svg {
@@ -148,6 +147,7 @@
       flex-direction: column-reverse;
       gap: 5rem;
       margin: 2rem 0;
+      padding: 2rem;
     }
   }
 }
