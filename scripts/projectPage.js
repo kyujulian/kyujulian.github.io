@@ -1,5 +1,3 @@
-// fetch JSON data
-
 var Liquid = window.liquidjs.Liquid;
 
 var engine = new Liquid({
@@ -7,32 +5,27 @@ var engine = new Liquid({
   cache: true,
 });
 
+const projectTemplate = `templates/project.liquid`;
+
+// fetch JSON data
 fetch("./projects/projects.json")
   .then((response) => response.json())
   .then((data) => {
-    window.addEventListener("hashchange", () => {
-      const hash = window.location.hash.substring(1); // Remove the '#' from the hash
-      console.log("hash", hash);
-
-      // Find the item that matches the hash
-      const selectedItem = data.find((item) => item.handle === hash);
-
-      if (selectedItem) {
-        loadAndRenderTemplate(selectedItem.handle);
-      }
-    });
-
     // Initial load: Check if there's a hash in the URL
     if (window.location.hash) {
-      const initialHash = window.location.hash.substring(1);
+      const initialHash = window.location.hash.substring(1); // Remove the '#' from the hash
 
+      // Find the item that matches the hash
       const initialItem = data.find((item) => item.handle === initialHash);
+      /*Pick the item with the handle that matches the url hash, e.g
+       *
+       * localhost:8080/projects.html#dec will display the dec project.
+       */
       const itemToRender = data
         .filter((item) => item.handle === initialHash)
         .at(0);
 
       if (itemToRender) {
-        console.log(itemToRender);
         loadAndRenderTemplate(itemToRender, initialItem.handle);
       }
     }
@@ -41,13 +34,14 @@ fetch("./projects/projects.json")
     console.log(err);
   });
 
+//Okay to repeat since this is a small project, I'm opting for encapsulation of functionality
 function loadAndRenderTemplate(data, handle) {
-  // Fetch the template using AJAX
-  fetch(`templates/project.liquid`)
+  fetch(projectTemplate)
     .then((response) => response.text())
     .then((template) => {
       // Render the template
       const renderedTemplate = engine.parseAndRenderSync(template, {
+        //feed in the json data to the template
         item: data,
       });
 
