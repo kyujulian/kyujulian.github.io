@@ -27,7 +27,7 @@ The second, it's to dynamically generate project pages according to the hashing 
 
 The url's are defined according to the following convention:\
 `kyujulian.github.io/projects.html#{{ project handle }}`\
-for example: [kyujulian.github.io/projects.html#dec](kyujulian.github.io/projects.html#dec) is valid, since dec is a valid handle defined in the `projects.json` file.
+for example: [kyujulian.github.io/projects.html#dec](https://kyujulian.github.io/projects.html#dec) is valid, since dec is a valid handle defined in the `projects.json` file.
 
 
 So that each project has it's own corresponding page generated through the LiquidJs calls in the scripts.
