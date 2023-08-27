@@ -1,6 +1,7 @@
 # Portfolio with Liquid Templating
 
-## Setup:
+Hosted through github pages [here](https://kyujulian.github.io)
+## Local Setup:
 
 ```
 git clone https://github.com/kyujulian/kyujulian.github.io
