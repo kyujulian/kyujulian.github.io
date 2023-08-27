@@ -13,6 +13,7 @@ npm start
 
 - **scripts**  - All the scripts used, both for interactive and templating reside here.
 - **Templates**- Contains all the LiquidJS templates.
+- **Partials** - Contains partial templates for common components - Nav and Footer
 - **assets** - All static images/logos used
 - **styles** - The styles are organized semantically by file. Each stylesheet is self-contained and only affects the section they're named after.
 - **projects** - All the dynamic generated content comes from this folder, it holds the required `projects.json` file and the images corresponding to each project.
