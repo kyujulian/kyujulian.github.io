@@ -10,12 +10,12 @@
 
       <div class="written">
         <div>
-          <h1 class="projects-title">{{ item.name }}</h1>
+          <h1 class="projects-title">{{ item.name | capitalize }}</h1>
 
           {% assign description = item.description | replace: "\n", "<br/>" %}
 
             {% comment %} {{so that it fits in the layout}} {% endcomment %}
-            <p>{{description | truncate: 250}}</p>
+            <p>{{description | truncatewords: 30}}</p>
             <a class="continue-reading-link" href="/projects.html#{{item.handle}}"> <p class="dots" > ... </p> Continue reading </a>
 
         </div>

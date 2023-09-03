@@ -11,7 +11,7 @@
         <div class="written">
 
         <div>
-          <h1 class="projects-title">{{ item.name }}</h1>
+          <h1 class="projects-title">{{ item.name | capitalize }}</h1>
 
           {% assign description = item.description | split: '\n' %}
           {% assign nOfRows = descriptionRows %}
